@@ -1,0 +1,37 @@
+.checkbox {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--white-color);
+    display: flex;
+    cursor: pointer;
+}
+
+.checkbox-selector:after {
+    content: url(./../../images/check-mark.svg);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    line-height: .9;
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0;
+    transition: all .45s;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]:checked ~ .checkbox-selector:after {
+    opacity: 1;
+}
+
+.checkbox > .checkbox-selector {
+    position: relative;
+    background-color: var(--white-color);
+    width: 33px;
+    height: 33px;
+    box-shadow: 0px 3px 6px var(--gray-color);
+    border-radius: 6px;
+    margin-right: 11px;
+    flex-shrink: 0;
+}

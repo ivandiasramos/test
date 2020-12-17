@@ -1,0 +1,24 @@
+.container {
+    padding-right: var(--grid-spacing);
+    padding-left: var(--grid-spacing);
+}
+
+.row {
+    display: flex;
+    margin-right: calc(var(--grid-spacing) * -1);
+    margin-left: calc(var(--grid-spacing) * -1);
+}
+
+.col {
+    flex: 1;
+    padding-right: var(--grid-spacing);
+    padding-left: var(--grid-spacing);
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}

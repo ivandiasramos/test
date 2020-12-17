@@ -1,0 +1,9 @@
+@import 'variables.css';
+@import 'general.css';
+@Import 'grid.css';
+@import 'page.css';
+@import './components/header.css';
+@import './components/footer.css';
+@import './components/checkbox.css';
+@import './components/button.css';
+@import './components/input-text.css';

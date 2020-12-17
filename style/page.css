@@ -1,0 +1,80 @@
+.presentation {
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.artist-background {
+    background-image: url(./../images/artist-photography.jpg);
+    background-position-y: -51px;
+    height: 210px;
+}
+
+.artist-description {
+    max-width: 208px;
+    height: auto;
+}
+
+.form-wrapper {
+    background-image: url(./../images/form-background.jpg);
+    background-size: cover;
+}
+
+.form-container {
+    max-width: 336px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+.form-field-spacing {
+    margin-top: 11px;
+    margin-bottom: 11px;
+}
+
+.ad-background {
+    background-image: url(./../images/secondary-ad.jpg);
+    background-position: center bottom;
+    height: 180px;
+}
+
+@media only screen and (min-width: 768px) {
+    .ad-background {
+        height: 370px;
+    }
+
+    .artist-background {
+        background-position-y: -80px;
+        height: 433px;
+    }
+
+    .artist-description {
+        max-width: 338px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .main {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: stretch;
+    }
+
+    .aside {
+        width: 65%;
+    }
+
+    .artist-background {
+        background-position-y: -80px;
+        height: auto;
+        background-position: center;
+        width: 35%;
+    }
+
+    .form-container {
+        max-width: 440px;
+        padding-top: 51px;
+        padding-bottom: 51px;
+    }
+}
